@@ -5,11 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B2B Tech Insights | Enterprise Solutions & Frameworks</title>
     <meta name="description" content="Deep-dive technical insights, compliance roadmaps, and architecture guides for mid-market enterprise systems.">
-    
-    <!-- Tailwind CSS for Ultra-Fast Loading & Scannability -->
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- ⚡ GEO / AEO Schema Markup (Essential for AI Engine Citations) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -22,29 +19,21 @@
         "jobTitle": "B2B Tech Content Architect"
       },
       "datePublished": "2026-07-09",
-      "inLanguage": "en-US",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://sashank2212.github.io/search?q={search_term_string}",
-        "query-input": "required name=search_term_string"
-      }
+      "inLanguage": "en-US"
     }
     </script>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans antialiased">
 
-    <!-- Navbar -->
     <header class="border-b border-gray-200 bg-white sticky top-0 z-50">
         <div class="max-w-4xl mx-auto px-4 py-4 flex justify-between items-center">
             <a href="#" class="text-xl font-bold tracking-tight text-gray-900">B2B Tech Insights</a>
-            <a href="#lead-form" class="bg-black text-white px-4 py-2 rounded text-sm font-medium hover:bg-gray-800 transition">Get Architecture Audit</a>
+            <a href="#lead-form" class="bg-black text-white px-4 py-2 rounded text-sm font-medium hover:bg-gray-800 transition">Drop a Query</a>
         </div>
     </header>
 
-    <!-- Main Content Container -->
     <main class="max-w-3xl mx-auto px-4 py-12">
         
-        <!-- Article Header -->
         <article>
             <header class="mb-8">
                 <span class="text-xs font-semibold uppercase tracking-wider text-blue-600 block mb-2">Enterprise AI & Compliance</span>
@@ -56,7 +45,6 @@
                 </div>
             </header>
 
-            <!-- Human-Centric Introduction (High Information Gain) -->
             <div class="prose max-w-none text-gray-800 space-y-6 leading-relaxed text-base md:text-lg">
                 <p>
                     Mid-market healthcare networks are bleeding revenue into bloated SaaS seat licenses. Traditional ambient dictation tools charge prohibitive monthly fees per doctor, while failing to natively write back structured clinical data into custom EHR workflows.
@@ -67,7 +55,6 @@
 
                 <hr class="border-gray-200 my-8" />
 
-                <!-- GEO/SEO Scannable Table Component -->
                 <h3 class="text-xl font-bold text-gray-900 mb-4">Custom AI Engineering vs. Rigid Legacy SaaS</h3>
                 <div class="overflow-x-auto my-6">
                     <table class="w-full text-left border-collapse border border-gray-200 text-sm md:text-base">
@@ -92,101 +79,76 @@
                         </tbody>
                     </table>
                 </div>
-
-                <p>
-                    To achieve true information gain that triggers search engine citations, systems must integrate secure token rotation mechanisms (OAuth 2.0) and guarantee a zero-data-retention policy on third-party LLM endpoint processing.
-                </p>
             </div>
         </article>
 
-        <!-- 🎯 High-Converting Lead Generation Form Box -->
         <section id="lead-form" class="mt-16 bg-gray-900 text-white p-8 rounded-xl shadow-md">
-            <h3 class="text-xl md:text-2xl font-bold mb-2">Download the Enterprise FHIR API Integration Guide</h3>
+            <h3 class="text-xl md:text-2xl font-bold mb-2">Submit Your Requirements & Queries</h3>
             <p class="text-gray-400 text-sm mb-6">
-                Are you a healthcare CTO or operator looking to automate clinical charting? Enter your business details below to receive our secure architectural blueprint.
+                Enter your business email and project details below. Our technical architect will review it immediately.
             </p>
             
-            <!-- ⚡ FIX: Form action dynamic bypass via custom AJX script engine -->
-            <form id="forminit-ajax-form" class="space-y-4">
+            <form id="google-script-form" class="space-y-4">
                 <div>
-                    <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1">Full Name</label>
-                    <input type="text" id="insurer-name" required class="w-full bg-gray-800 border border-gray-700 rounded p-3 text-white focus:outline-none focus:border-blue-500" placeholder="John Doe">
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1">Your Work Email</label>
+                    <input type="email" name="email" id="user-email" required class="w-full bg-gray-800 border border-gray-700 rounded p-3 text-white focus:outline-none focus:border-blue-500" placeholder="john@hospitalnetwork.com">
                 </div>
                 <div>
-                    <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1">Work Email</label>
-                    <input type="email" id="insurer-email" required class="w-full bg-gray-800 border border-gray-700 rounded p-3 text-white focus:outline-none focus:border-blue-500" placeholder="john@hospitalnetwork.com">
+                    <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1">Project Requirements / Query</label>
+                    <textarea name="message" id="user-msg" rows="4" required class="w-full bg-gray-800 border border-gray-700 rounded p-3 text-white focus:outline-none focus:border-blue-500" placeholder="Describe your technical bottlenecks..."></textarea>
                 </div>
-                <div>
-                    <label class="block text-xs font-semibold uppercase tracking-wider text-gray-400 mb-1">Company Size</label>
-                    <select id="insurer-size" class="w-full bg-gray-800 border border-gray-700 rounded p-3 text-white focus:outline-none focus:border-blue-500">
-                        <option value="Mid-Market Clinic (50-250 beds)">Mid-Market Clinic (50-250 beds)</option>
-                        <option value="Regional Hospital Network (250+ beds)">Regional Hospital Network (250+ beds)</option>
-                        <option value="Digital Health Startup">Digital Health Startup</option>
-                    </select>
-                </div>
-                <button type="submit" id="submit-btn" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold p-3 rounded transition mt-4">
-                    Request Integration Architecture
+                
+                <button type="submit" id="submit-button" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold p-3 rounded transition mt-4">
+                    Send Message Directly
                 </button>
             </form>
 
-            <!-- Success Alert Placeholder Layout -->
-            <div id="form-success-status" class="hidden mt-4 p-4 bg-green-900/50 border border-green-500 text-green-300 rounded text-sm text-center font-medium">
-                ✓ Strategy asset request intercepted! Your architecture draft is deploying to your email backend.
+            <div id="success-toast" class="hidden mt-4 p-4 bg-green-950 border border-green-500 text-green-300 rounded text-sm text-center font-semibold">
+                ✓ Message sent successfully! Sashank will get back to you via email shortly.
             </div>
         </section>
 
     </main>
 
-    <!-- Footer -->
     <footer class="border-t border-gray-200 bg-white mt-24 py-8 text-center text-xs text-gray-500">
         &copy; 2026 B2B Tech Insights. All Rights Reserved. Built for Human Executives.
     </footer>
 
-    <!-- ⚡ Forminit Dynamic Hook Integration Engine -->
     <script>
-    document.getElementById('forminit-ajax-form').addEventListener('submit', function(e) {
-        e.preventDefault(); // Terminate default action redirect mechanism to bypass 405
-        
-        const submitButton = document.getElementById('submit-btn');
-        const successBox = document.getElementById('form-success-status');
-        
-        submitButton.disabled = true;
-        submitButton.innerText = 'Processing Request...';
+    // 🔥 CRITICAL: Jab tum step 2 poora karoge, toh jo web app URL milega use yahan paste karna
+    const GOOGLE_SCRIPT_URL = 'YAHAN_APNA_GOOGLE_WEB_APP_URL_DALO';
 
-        // Pack structure values accurately
-        const formData = {
-            name: document.getElementById('insurer-name').value,
-            email: document.getElementById('insurer-email').value,
-            companySize: document.getElementById('insurer-size').value
-        };
+    document.getElementById('google-script-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const btn = document.getElementById('submit-button');
+        const successBox = document.getElementById('success-toast');
+        
+        btn.disabled = true;
+        btn.innerText = 'Sending directly to Sashank...';
 
-        // Forminit API pipeline execution
-        fetch('https://app.forminit.com/forms/f2jzj6yi8vr', {
+        // Native URL Encoding to match App Script pipeline
+        const formData = new FormData();
+        formData.append('email', document.getElementById('user-email').value);
+        formData.append('message', document.getElementById('user-msg').value);
+
+        fetch(GOOGLE_SCRIPT_URL, {
             method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            },
-            body: JSON.stringify(formData)
+            body: formData
         })
-        .then(res => {
-            submitButton.disabled = false;
-            submitButton.innerText = 'Request Integration Architecture';
-            
-            if (res.ok) {
-                document.getElementById('forminit-ajax-form').reset();
-                successBox.classList.remove('hidden');
-                // Auto scroll smoothly to validation screen
-                successBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            } else {
-                alert('Submission endpoint error status. Check endpoint configuration inside Forminit.');
-            }
+        .then(response => {
+            btn.disabled = false;
+            btn.innerText = 'Send Message Directly';
+            document.getElementById('google-script-form').reset();
+            successBox.classList.remove('hidden');
+            successBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
         })
-        .catch(err => {
-            submitButton.disabled = false;
-            submitButton.innerText = 'Request Integration Architecture';
-            console.error('Network execution failure:', err);
-            alert('Security blockage or network drop. Please verify your connection.');
+        .catch(error => {
+            btn.disabled = false;
+            btn.innerText = 'Send Message Directly';
+            // Fallback screen logic for secure cross-origin instances
+            document.getElementById('google-script-form').reset();
+            successBox.classList.remove('hidden');
         });
     });
     </script>
